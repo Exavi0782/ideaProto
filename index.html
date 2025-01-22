@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вітрина сайту</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #2c003e;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 3em;
+            color: #d3a7f7;
+        }
+
+        p {
+            margin: 20px auto;
+            font-size: 1.2em;
+            max-width: 800px;
+            color: #e4d4ff;
+        }
+
+        .carousel {
+            position: relative;
+            width: 80%;
+            max-width: 400px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .carousel-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: #ffffff;
+            font-size: 2em;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 50%;
+        }
+
+        .carousel-button:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Заголовок сайту</h1>
+
+    <p id="intro">Текст буде завантажено...</p>
+
+    <div class="carousel">
+        <div class="carousel-track" id="carouselTrack">
+            <!-- Фотографії будуть завантажені тут -->
+        </div>
+        <div class="carousel-nav">
+            <button class="carousel-button" id="prevBtn">&#10094;</button>
+            <button class="carousel-button" id="nextBtn">&#10095;</button>
+        </div>
+    </div>
+
+    <p id="description">Інший опис буде завантажено...</p>
+
+    <script async defer>
+        async function loadTextContent(filePath, elementId) 
+        {
+            try {
+                const response = await fetch(filePath);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.text();
+                document.getElementById(elementId).innerText = data;
+            } catch (error) {
+                console.error(`Error loading ${filePath}:`, error.message);
+                document.getElementById(elementId).innerText = 'Не вдалося завантажити текст';
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+        // Завантаження тексту з файлу
+        loadTextContent('./intro.txt', 'intro');
+        loadTextContent('./description.txt', 'description');
+
+        // Завантаження фотографій
+        const imageFolder = './images';
+        const imageCount = 5; // Вкажіть кількість фото в папці
+
+        const carouselTrack = document.getElementById('carouselTrack');
+        const images = [];
+
+        for (let i = 1; i <= imageCount; i++) {
+            const img = document.createElement('img');
+            img.src = `${imageFolder}/image${i}.jpg`;
+            img.alt = `Фото ${i}`;
+            images.push(img);
+        }
+
+        // Клонування першого та останнього зображення
+        const firstClone = images[0].cloneNode(true);
+        const lastClone = images[images.length - 1].cloneNode(true);
+
+        carouselTrack.appendChild(lastClone);
+        images.forEach(img => carouselTrack.appendChild(img));
+        carouselTrack.appendChild(firstClone);
+
+        // Логіка для вітрини фотографій
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            const width = carouselTrack.children[0].clientWidth;
+            carouselTrack.style.transition = 'transform 0.5s ease-in-out';
+            carouselTrack.style.transform = `translateX(-${currentIndex * width}px)`;
+        }
+
+        function checkIndex() {
+            const width = carouselTrack.children[0].clientWidth;
+            if (currentIndex === 0) {
+                carouselTrack.style.transition = 'none';
+                currentIndex = imageCount;
+                carouselTrack.style.transform = `translateX(-${currentIndex * width}px)`;
+            }
+            if (currentIndex === imageCount + 1) {
+                carouselTrack.style.transition = 'none';
+                currentIndex = 1;
+                carouselTrack.style.transform = `translateX(-${currentIndex * width}px)`;
+            }
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+            }
+            updateCarousel();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < carouselTrack.children.length - 1) {
+                currentIndex++;
+            }
+            updateCarousel();
+        });
+
+        carouselTrack.addEventListener('transitionend', checkIndex);
+
+        window.addEventListener('resize', updateCarousel);
+        // Ініціалізація каруселі
+        updateCarousel();
+        });
+    </script>
+    </script>
+</body>
+</html>

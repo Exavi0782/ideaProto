@@ -1,0 +1,39 @@
+{
+  "header": {
+    "title": "Pagefinder Lore",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "Welcome to the Pagefinder Lore page (from Mira's perspective)",
+    "text": "Scroll down to explore the lore"
+  },
+  "content": {
+    "welcome": "Welcome to Pagefinder",
+    "sections": {
+      "introduction": {
+        "title": "In Search of the Page: LORE",
+        "content": "Where should I start? Probably from the beginning, and in the beginning, there was the word. It sounds pretentious, but this is our weapon in the modern world, so our hero also uses words as a weapon. Speaking of heroes, our main characters are Prism, Dexterity, and Clementine (not a real name). All three characters have a color scheme representing one of the primary CMYK colors. Cyan is a blue color, Hatsune Miku-like turquoise, or simply cyan. Magenta is purple-pink, bright pink, or just magenta. Yellow is simply yellow, no extra details. Key is black, representing the depth of shade. Why do you need to know this? Just because. \n\n Well, you need to know this because it's like RGB but for all existing physical colors, and they are more... real. These colors can create absolutely any existing color. It's the foundation. You might say RGB is also a foundation, but it's only related to light. Ideally, your color scheme should include both CMYK and RGB. Why am I telling you this? Because our heroes represent the CMYK color scheme and convey their personalities through colors and shapes. A character should evoke emotions and leave an impression not only through their behavior but also through their entire appearance—color, shape, details, and simplifications all matter."
+      },
+      "prism": {
+        "title": "Prism",
+        "content": "The main character we will play is Prism. From the word prism, a play on color dispersion. He represents cyan, meaning blue. I decided not to use gender neutrality for the characters, so he will be a guy. He is 19-20 years old and the youngest of the trio. The whole story unfolds from his perspective as he searches for lost pages of a diary across the map, allowing the player to experience the story. His shape is a triangle, or sharp angles. The angles and color convey his sharpness, seriousness, and elegance. Also, a slight irritability—he is always the first to engage in battle."
+      },
+      "dexterity": {
+        "title": "Dexterity",
+        "content": "Our next character is Dexterity, or Dex. Dexterity means speed, or Dex from the Romanian dictionary. She is introduced at the end of the first location, and she is the healer. She is a chill girl around 23 years old. Her color is magenta, and her shape is a square. Her design contains many rounded elements that reflect her personality, as well as an allusion to the keys of a typewriter. Her healing mechanic works as follows: during combat, she appears in the corner of the screen, typing on her machine and throwing pages at Prism, thereby restoring his HP. Her long fingers under the sleeves and the way she types is both funny and epic at the same time. Also, her glasses contain a reference. Guess to what?"
+      },
+      "page": {
+        "title": "Page",
+        "content": "We have reached the third character, the most mysterious one, as she disappears and reappears in our memories. She is the owner of the diary, the last drop of color in this story. Her name refers to the game's title, or vice versa—the game refers to her name. We call her Clementine because she is round and orange, but her name is Page, referring to a 'page' in a book. She disappeared, and the diary pages are the only link to her. Throughout the game, we never mention her real name, leaving it as a mystery until the very end."
+      },
+      "story1": {
+        "title": "Story",
+        "content": "The first scene is Prism's dream, where the player will get a combat tutorial. We see a fight in the university courtyard where the player is introduced to combat mechanics, healing, and all three characters. The next cutscene, also in the dream, takes place after the battle. The three of them—Prism, Dex, and Page—are in the literature club room discussing the situation where Prism got into a fight because some students were handing out flyers claiming vaccines are actually a means of chipping people and turning them into zombies (or any other nonsense of your choice). In other words, it’s some kind of nonsense. Dex jokingly calls Page a coward, but deep down, Page takes it as a challenge (this can be conveyed through her emotions). \n\n The next memory, continuing the cutscene, shows Dex and Prism in the literature club room watching TV. They see the news and realize that Page has organized a local campaign trying to open people’s eyes to the surrounding lies. The reporter also mentions that she disappeared along with the other protesters. The cutscene ends with them finding her hat in the same room. Dex feels abandoned, guilty, and disappointed that Page disappeared. She says she doesn't want to hear anything about her anymore. Prism's emotion is fear and confusion, but he doesn't believe that Page disappeared just like that. The scene ends with him waking up. The cutscene and tutorial don't take more than 5-10 minutes. \n\n Their world is oversaturated with information, leading to doublethink and informational chaos. People believe everything that media, fully controlled by the government, feeds them. Everything that interferes with their rule is either destroyed or turned into absurdity."
+      },
+      "story2": {
+        "title": "",
+        "content": "The next location is the 'Orange Forest', where his home is. He wakes up, puts on the hat left by Page, and sets out to find her because the situation has troubled him for a year. The player can explore his house before heading into the forest to find Dex's home. Along the way, mobs appear, telling him new fake theories and news, leading to small battles where he convinces people of the truth. He also collects diary pages that strengthen his connection with his lost friend. The location ends at Dex's house, where there is a small fight and they talk for the first time in a year. \n\n The next location 'City' opens only a small shop where new 'weapons' can be purchased, enhancing combat abilities. The path to the next location, 'Park', is also unlocked. \n\n In the 'Park', there will be a boss battle in a printing house. When entering, the park is gray, and colors return after defeating the boss. After the battle, the entire park becomes explorable, and more diary pages can be collected. \n\n After the 'Park', they return to the 'City', where a battle takes place at the TV station, and at the end, it turns out that the antagonist is a human. \n\n I want to emphasize that behind all this is not technology—it is just a tool in human hands. Page is far away in another place, and we still need to work on her motivation and that of the antagonist. Perhaps, as in Orwell's 1984, the antagonist's goal is power and all its privileges."
+      }
+    }
+  }
+}

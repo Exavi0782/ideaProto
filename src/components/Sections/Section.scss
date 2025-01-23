@@ -1,0 +1,47 @@
+.section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    height: auto;
+    &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6); 
+    }
+  
+    &__container {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      width: 100%;
+      padding: 60px 5%;
+      background: rgba(30, 30, 30, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+  
+    &__title {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: white;
+    }
+  
+    &__content {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  

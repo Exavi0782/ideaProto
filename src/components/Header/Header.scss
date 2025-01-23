@@ -1,0 +1,47 @@
+$primary-color: #282c34;
+$text-color: white;
+$font-size-large: 24px;
+$font-size-medium: 20px;
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+  align-items: center;
+  padding: 20px;
+  background-color: $primary-color;
+  color: $text-color;
+  font-size: $font-size-large;
+  font-weight: bold;
+
+  &__title {
+    flex: 1;
+    text-align: center;
+  }
+
+  &__language-switch {
+    display: flex;
+    gap: 10px;
+    font-size: $font-size-medium;
+    cursor: pointer;
+  }
+
+  &__language-option {
+    transition: all 0.3s ease;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &--active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+
+  &__separator {
+    color: $text-color;
+  }
+}

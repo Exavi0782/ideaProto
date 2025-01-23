@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ideaProto/static/css/main.ed79476d.css",
+    "main.js": "/ideaProto/static/js/main.90ec47ab.js",
+    "static/media/image2.jpg": "/ideaProto/static/media/image2.741c41bbc037889a9013.jpg",
+    "index.html": "/ideaProto/index.html",
+    "main.ed79476d.css.map": "/ideaProto/static/css/main.ed79476d.css.map",
+    "main.90ec47ab.js.map": "/ideaProto/static/js/main.90ec47ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed79476d.css",
+    "static/js/main.90ec47ab.js"
+  ]
+}

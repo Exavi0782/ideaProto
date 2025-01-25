@@ -1,14 +1,20 @@
 {
   "files": {
-    "main.css": "/ideaProto/static/css/main.ed79476d.css",
-    "main.js": "/ideaProto/static/js/main.90ec47ab.js",
+    "main.css": "/ideaProto/static/css/main.ba5d0503.css",
+    "main.js": "/ideaProto/static/js/main.de2ae0d6.js",
+    "static/media/image6.jpg": "/ideaProto/static/media/image6.e22d2e56e2ecdb4a4e41.jpg",
     "static/media/image2.jpg": "/ideaProto/static/media/image2.741c41bbc037889a9013.jpg",
+    "static/media/image5.jpg": "/ideaProto/static/media/image5.6c3d1175c9ccec87bb29.jpg",
+    "static/media/image4.jpg": "/ideaProto/static/media/image4.d24afeabfaff8b1ed4e5.jpg",
+    "static/media/image1.jpg": "/ideaProto/static/media/image1.0b01a7f1e3996cf30c44.jpg",
+    "static/media/image7.jpg": "/ideaProto/static/media/image7.e4a16f5c93ce9cdd694e.jpg",
+    "static/media/image8.jpg": "/ideaProto/static/media/image8.0e63c74f2c14406e6c31.jpg",
     "index.html": "/ideaProto/index.html",
-    "main.ed79476d.css.map": "/ideaProto/static/css/main.ed79476d.css.map",
-    "main.90ec47ab.js.map": "/ideaProto/static/js/main.90ec47ab.js.map"
+    "main.ba5d0503.css.map": "/ideaProto/static/css/main.ba5d0503.css.map",
+    "main.de2ae0d6.js.map": "/ideaProto/static/js/main.de2ae0d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed79476d.css",
-    "static/js/main.90ec47ab.js"
+    "static/css/main.ba5d0503.css",
+    "static/js/main.de2ae0d6.js"
   ]
 }

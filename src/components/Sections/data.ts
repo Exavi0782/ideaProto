@@ -18,15 +18,5 @@ export const sections = [
     id: "page",
     titleKey: "content.sections.page.title",
     contentKey: "content.sections.page.content",
-  },
-  {
-    id: "story1",
-    titleKey: "content.sections.story1.title",
-    contentKey: "content.sections.story1.content",
-  },
-  {
-    id: "story2",
-    titleKey: "content.sections.story2.title",
-    contentKey: "content.sections.story2.content",
-  },
+  }
 ];

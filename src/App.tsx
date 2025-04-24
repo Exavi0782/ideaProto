@@ -39,7 +39,6 @@ const App: React.FC = () => {
           id={section.id}
           title={t(section.titleKey)}
           content={t(section.contentKey)}
-          background={section.background}
         />
       ))}
     </div>
